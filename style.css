@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    gap: 15px;
+}
+
+.header h2 {
+    color: red;
+}
+
+.header input {
+    margin-left: auto;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.header button {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.name {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 180px;
+    padding: 10px;
+}
+
+.sidebar p {
+    padding: 10px;
+}
+
+.sidebar p:hover {
+    background-color: lightgray;
+}
+
+/* Videos */
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.buttons button:first-child {
+    background-color: black;
+    color: white;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 17px;
+}
+
+.card p {
+    font-size: 13px;
+    color: gray;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .videos {
+        grid-template-columns: 1fr;
+    }
+
+    .header input {
+        width: 100px;
+    }
+}
